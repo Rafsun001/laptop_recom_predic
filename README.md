@@ -165,3 +165,43 @@ Now if the gain is greater than the gamma value only then the splitting will hap
 *Formula:* New prediction=previous prediction+(η*Model residual prediction)
 
 Now put the values in the formula and get the new prediction. Then all those processes will happen again and again until the residuals become zero.
+
+### Laptop Recommendation
+In this recommendation system user need to pass a laptop model name and it will recommend 5 laptops. All the laptop information present in the dataset was collected from amazon official site through web scraping.
+
+#### How recommendations are done?
+Cosine similarity is a metric used to measure the similarity between two vectors in a multidimensional space. It calculates the cosine of the angle between these vectors, providing a measure of similarity irrespective of their magnitudes. This similarity measure is widely used in various fields, including text analysis, recommendation systems, and information retrieval.
+
+**Here's how cosine similarity works:**
+
+*1. Understanding Vectors:* In the context of cosine similarity, vectors represent the magnitude and direction of quantities.
+Each vector can be thought of as a set of numerical values in a multidimensional space.
+
+*2. Calculating Cosine Similarity:* Given two vectors, say A and B, cosine similarity is calculated using the dot product of the vectors and their magnitudes.
+
+*Cosine Similarity Formula:* cosine_similarity(A, B) = dot_product(A, B) / (magnitude(A) * magnitude(B))
+
+**Steps to Calculate Cosine Similarity:**
+
+*1. Compute Dot Product:* Calculate the dot product of vectors A and B by multiplying their corresponding elements and summing the results.
+
+*2.Calculate Magnitudes:* Compute the magnitudes of vectors A and B by taking the square root of the sum of squares of their elements.
+
+*3.Compute Cosine Similarity:* Divide the dot product by the product of the magnitudes to get the cosine similarity.
+
+**Example Calculation:**
+
+Let's say we have two vectors: A = [3, 5, 2] and B = [1, 7, 4].
+
+*Compute Dot Product:*
+
+A ⋅ B = (3 * 1) + (5 * 7) + (2 * 4) = 3 + 35 + 8 = 46
+Calculate Magnitudes:
+
+|A| = sqrt(3^2 + 5^2 + 2^2) = sqrt(9 + 25 + 4) = sqrt(38) ≈ 6.164
+
+|B| = sqrt(1^2 + 7^2 + 4^2) = sqrt(1 + 49 + 16) = sqrt(66) ≈ 8.124
+
+*Compute Cosine Similarity:*
+
+cosine_similarity(A, B) = 46 / (6.164 * 8.124) ≈ 0.882
