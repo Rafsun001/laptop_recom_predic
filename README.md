@@ -27,10 +27,10 @@ In this prediction system user need to pass the specification of a laptop and it
 **Some charts are created:**
 1. Pie Chart
 2. Bar Chart
-3. Scatter Plot
+3. Scatterplot
 
 #### Outliers Handling
-1. To visualize the outliers box plot and dist plots are used.
+1. To visualize the outliers boxplot and distplot are used.
 2. After detection is done using IQR(Inter Quartile Range) method. 
 3. After detecting the outliers some outliers has been removed and some replaced with other value.
  
